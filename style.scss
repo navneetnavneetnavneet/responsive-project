@@ -1,0 +1,371 @@
+@font-face {
+  font-family: "mono";
+  src: url(./assets/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.ttf);
+}
+
+@font-face {
+  font-family: "mono2";
+  src: url(./assets/63fd93c92039220238a118fe_GeneralSans-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-family: "mono2";
+}
+
+main {
+  width: 100%;
+  padding: 4rem 0em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+
+  .hero-text {
+    padding: 0em 1.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .text {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-family: "mono";
+        opacity: 0.9;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  .image-text {
+    width: 100%;
+    padding: 0em 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .top {
+      width: 100%;
+      aspect-ratio: 1/1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 0.05em;
+      }
+
+      p {
+        font-size: 1.1em;
+        font-family: "mono";
+        line-height: 1.5;
+        opacity: 0.9;
+        letter-spacing: 0.03em;
+      }
+
+      .services {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .service {
+          display: flex;
+          justify-content: space-between;
+
+          h2 {
+            font-size: 1.7em;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+          }
+        }
+      }
+    }
+  }
+
+  .verticle-text {
+    width: 100%;
+    padding: 0em 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .top {
+      width: 100%;
+      aspect-ratio: 1/1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      gap: 2em;
+
+      p {
+        writing-mode: vertical-lr;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-family: "mono";
+        opacity: 0.9;
+        letter-spacing: 0.05em;
+        padding-top: 0.5em;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        h1 {
+          font-size: 2.5em;
+          font-weight: 400;
+          text-transform: uppercase;
+          line-height: 1;
+          letter-spacing: 0.05em;
+        }
+
+        p {
+          writing-mode: initial;
+          text-transform: initial;
+          font-size: 1.1em;
+          font-family: "mono";
+          line-height: 1.5;
+          opacity: 0.5;
+          letter-spacing: 0.03em;
+        }
+      }
+    }
+  }
+
+  .services-text {
+    width: 100%;
+    padding: 4em 1.5em;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 0.05em;
+      }
+
+      .services-div {
+        width: 100%;
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, minmax(100px, 1fr));
+
+        .service {
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+
+          .line {
+            width: 100%;
+            height: 1px;
+            background-color: gray;
+          }
+
+          h2 {
+            font-size: 1.7em;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+          }
+
+          p {
+            font-size: 1em;
+            font-family: "mono";
+            line-height: 1.5;
+            opacity: 0.5;
+          }
+
+          .btn-div {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+
+            .icon {
+              cursor: pointer;
+              width: 2.5em;
+              height: 2.5em;
+              border-radius: 50%;
+              background-color: black;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              i {
+                color: white;
+                font-size: 1.1em;
+                opacity: 0.5;
+              }
+            }
+
+            p {
+              text-transform: uppercase;
+              font-size: 0.8em;
+              font-family: "mono";
+              opacity: 0.9;
+              letter-spacing: 0.05em;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      aspect-ratio: 1/1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    gap: 4em;
+
+    .hero-text {
+      padding: 0em 4em;
+    }
+
+    .image-text {
+      padding: 0em 4em;
+      flex-direction: row-reverse;
+      gap: 4em;
+
+      .bottom {
+        padding: 2em 0em;
+
+        h1 {
+          font-size: 5em;
+        }
+
+        p {
+          font-size: 1.5em;
+        }
+
+        .services {
+          margin-top: auto;
+
+          .service {
+            h2 {
+              font-size: 2em;
+            }
+          }
+        }
+      }
+    }
+
+    .verticle-text {
+      padding: 0em 4em;
+      flex-direction: row;
+      gap: 4em;
+
+      .top {
+        width: 35%;
+      }
+
+      .bottom {
+        width: 65%;
+        padding: 2em 0em;
+        flex-direction: row-reverse;
+        gap: 4em;
+
+        .text {
+          h1 {
+            font-size: 5.5em;
+          }
+
+          p {
+            width: 75%;
+            margin-top: auto;
+            font-size: 1.1em;
+          }
+        }
+      }
+    }
+
+    .services-text {
+      padding: 4em 4em;
+      padding-bottom: 8em;
+      flex-direction: row;
+      gap: 4em;
+
+      .top {
+        width: 50%;
+        padding: 2em 0em;
+        gap: 4em;
+
+        h1 {
+          font-size: 5.5em;
+        }
+
+        .services-div {
+          gap: 4em;
+          grid-template-rows: repeat(2, minmax(100px, 1fr));
+          grid-template-columns: repeat(2, minmax(100px, 1fr));
+        }
+      }
+
+      .bottom {
+        width: 50%;
+      }
+    }
+  }
+}

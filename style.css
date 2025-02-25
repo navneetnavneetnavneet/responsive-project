@@ -24,7 +24,6 @@ html {
 
 main {
   width: 100%;
-  padding: 4rem 0em;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -424,6 +423,164 @@ main .team-text .bottom .btn-div p {
   opacity: 0.9;
   letter-spacing: 0.05em;
 }
+main footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 1em 0em;
+}
+main footer .footer-top {
+  width: 100%;
+  padding: 4em 1.5em;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+main footer .footer-top .image {
+  width: 100%;
+}
+main footer .footer-top .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main footer .footer-top h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+main footer .footer-top .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5em 1em;
+  background-color: white;
+  border-radius: 100px;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+main footer .footer-top .btn p {
+  font-size: 0.8em;
+  font-family: "mono";
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+main footer .footer-top .btn i {
+  opacity: 0.8;
+}
+main footer .footer-center {
+  width: 100%;
+  padding: 0em 1.5em;
+  padding-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(100px, 1fr));
+  grid-template-rows: auto;
+  gap: 2em;
+}
+main footer .footer-center .elem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main footer .footer-center .elem h4 {
+  font-size: 1.1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+main footer .footer-center .elem .elem-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main footer .footer-center .elem .elem-links .link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+main footer .footer-center .elem .elem-links .link i {
+  padding: 0.5em;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+}
+main footer .footer-center .elem .elem-links .link p {
+  font-size: 0.8em;
+  font-family: "mono";
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+main footer .footer-center .elem .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5em 1em;
+  background-color: white;
+  border-radius: 100px;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+main footer .footer-center .elem .btn p {
+  font-size: 0.8em;
+  font-family: "mono";
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+main footer .footer-center .elem .btn i {
+  opacity: 0.8;
+}
+main footer .footer-bottom {
+  padding: 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+main footer .footer-bottom p {
+  text-align: center;
+  font-size: 0.8em;
+  font-family: "mono";
+  text-transform: uppercase;
+  line-height: 1.5;
+  opacity: 0.5;
+  letter-spacing: 0.05em;
+}
+main footer .footer-bottom p a {
+  font-weight: 500;
+  color: gainsboro;
+}
+main footer .footer-bottom .btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+main footer .footer-bottom .btn .icon {
+  width: 2.5em;
+  height: 2.5em;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main footer .footer-bottom .btn .icon i {
+  color: black;
+}
 
 @media (min-width: 900px) {
   main {
@@ -555,5 +712,29 @@ main .team-text .bottom .btn-div p {
   }
   main .team-text .bottom h1 {
     font-size: 4em;
+  }
+  main footer {
+    padding: 2em 0em;
+  }
+  main footer .footer-top {
+    padding: 8em 4em;
+    gap: 3em;
+  }
+  main footer .footer-top h1 {
+    width: 70%;
+    font-size: 4em;
+    line-height: 1;
+  }
+  main footer .footer-center {
+    padding: 4em 4em;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+  }
+  main footer .footer-center .elem .btn {
+    margin-top: 1em;
+  }
+  main footer .footer-bottom {
+    padding: 0em 4em;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

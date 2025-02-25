@@ -26,7 +26,6 @@ html {
 
 main {
   width: 100%;
-  padding: 4rem 0em;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -484,6 +483,186 @@ main {
       }
     }
   }
+
+  footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1em 0em;
+
+    .footer-top {
+      width: 100%;
+      padding: 4em 1.5em;
+      border-bottom: 1px solid gainsboro;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+
+      .image {
+        width: 100%;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2em;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+      }
+
+      .btn {
+        width: fit-content;
+        padding: 0.5em 1em;
+        background-color: white;
+        border-radius: 100px;
+        color: black;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        cursor: pointer;
+
+        p {
+          font-size: 0.8em;
+          font-family: "mono";
+          opacity: 0.8;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+
+        i {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .footer-center {
+      width: 100%;
+      padding: 0em 1.5em;
+      padding-top: 2em;
+
+      display: grid;
+      grid-template-columns: repeat(1, minmax(100px, 1fr));
+      grid-template-rows: auto;
+      gap: 2em;
+
+      .elem {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        h4 {
+          font-size: 1.1em;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+
+        .elem-links {
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+
+          .link {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+
+            i {
+              padding: 0.5em;
+              border-radius: 50%;
+              background-color: white;
+              color: black;
+            }
+
+            p {
+              font-size: 0.8em;
+              font-family: "mono";
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+              opacity: 0.9;
+            }
+          }
+        }
+
+        .btn {
+          width: fit-content;
+          padding: 0.5em 1em;
+          background-color: white;
+          border-radius: 100px;
+          color: black;
+          display: flex;
+          align-items: center;
+          gap: 0.5em;
+          cursor: pointer;
+
+          p {
+            font-size: 0.8em;
+            font-family: "mono";
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+          }
+
+          i {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      padding: 2em 1.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2em;
+
+      p {
+        text-align: center;
+        font-size: 0.8em;
+        font-family: "mono";
+        text-transform: uppercase;
+        line-height: 1.5;
+        opacity: 0.5;
+        letter-spacing: 0.05em;
+
+        a {
+          font-weight: 500;
+          color: gainsboro;
+        }
+      }
+
+      .btn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        .icon {
+          width: 2.5em;
+          height: 2.5em;
+          background-color: white;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          i {
+            color: black;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 900px) {
@@ -648,6 +827,38 @@ main {
         h1 {
           font-size: 4em;
         }
+      }
+    }
+
+    footer {
+      padding: 2em 0em;
+
+      .footer-top {
+        padding: 8em 4em;
+        gap: 3em;
+
+        h1 {
+          width: 70%;
+          font-size: 4em;
+          line-height: 1;
+        }
+      }
+
+      .footer-center {
+        padding: 4em 4em;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+
+        .elem {
+          .btn {
+            margin-top: 1em;
+          }
+        }
+      }
+
+      .footer-bottom {
+        padding: 0em 4em;
+        flex-direction: row;
+        justify-content: space-between;
       }
     }
   }

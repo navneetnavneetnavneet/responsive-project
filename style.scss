@@ -28,7 +28,55 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1em;
+
+  nav {
+    width: 100%;
+    padding: 1em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h4 {
+      font-size: 1.1em;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .links {
+    // display: none;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    p {
+      display: none;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: "mono";
+    }
+
+    .btn {
+      display: none;
+      cursor: pointer;
+      padding: 0.8em 1.6em;
+      background-color: black;
+      border-radius: 100px;
+      color: white;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: "mono";
+    }
+
+    i {
+      cursor: pointer;
+      font-size: 1.5em;
+    }
+  }
 
   .hero-text {
     padding: 0em 1.5em;
@@ -665,9 +713,28 @@ main {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   main {
     gap: 4em;
+
+    nav {
+      padding: 2em 4em;
+
+      .links {
+        p {
+          cursor: pointer;
+          display: flex;
+        }
+
+        .btn {
+          display: flex;
+        }
+
+        i {
+          display: none;
+        }
+      }
+    }
 
     .hero-text {
       padding: 0em 4em;
